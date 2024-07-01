@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Make it Hyperlegible
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Adds a tiny "H" button in the bottom left to toggle the Atkinson Hyperlegible font.
 // @author       Murray Inman
 // @updateURL    https://github.com/murrayinman/userscripts/raw/main/general/Hyperlegible.user.js
@@ -35,10 +35,10 @@
 
   // Define the CSS rules
   const cssRules = `
-  .atkinson-hyperlegible {font-family: "Atkinson Hyperlegible", sans-serif; font-weight: 400; font-style: normal;}
-  .atkinson-hyperlegible strong {font-family: "Atkinson Hyperlegible", sans-serif; font-weight: 700; font-style: normal;}
-  .atkinson-hyperlegible em {font-family: "Atkinson Hyperlegible", sans-serif; font-weight: 400; font-style: italic;}
-  .atkinson-hyperlegible strong em, .atkinson-hyperlegible em strong {font-family: "Atkinson Hyperlegible", sans-serif; font-weight: 700; font-style: italic;}
+  .atkinson-hyperlegible * {font-family: "Atkinson Hyperlegible", sans-serif !important; font-weight: 400; font-style: normal;}
+  .atkinson-hyperlegible strong {font-weight: 700; font-style: normal;}
+  .atkinson-hyperlegible em {font-style: italic;}
+  .atkinson-hyperlegible strong em, .atkinson-hyperlegible em strong {font-weight: 700; font-style: italic;}
   #hButton {position: fixed; bottom: 5px; left: 5px; z-index: 1000; height: calc(2cap + 5px); width: calc(2cap + 5px); font-size: 1rem; padding: 5px; margin: 0; background-color: #b2222266; color: #fff; transition: border-radius .5s ease; font-weight: 700; border-radius: 3px; border: 1px solid #cccccc; aspect-ratio: 1 / 1; line-height: 1; font-family: ui-monospace;}
   .atkinson-hyperlegible #hButton {background-color: #00640066; border-radius: 50%;}
   `;
