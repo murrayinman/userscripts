@@ -6,6 +6,7 @@ hButton.id = "hButton";
 
 const linkMHStylesheet = document.createElement("link");
 linkMHStylesheet.rel = "stylesheet";
+linkMHStylesheet.type = "text/css";
 linkMHStylesheet.href = "https://raw.githubusercontent.com/murrayinman/userscripts/main/general/MakeHyperlegible.css";
 document.head.appendChild(linkMHStylesheet);
 
