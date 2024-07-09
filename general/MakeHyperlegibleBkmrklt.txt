@@ -10,5 +10,6 @@ To use the bookmarklet, open a webpage and click on the bookmark.
 An "H" button will display in the lower left corner of the page.
 Clicking the button will toggle the Atkinson Hyperlegible font on and off.
 
-Code:
+CODE TO COPY INTO THE BOOKMARK:
+
 javascript:(function()%7Bconst%20hButton%3Ddocument.createElement(%22button%22)%3BhButton.innerText%3D%22H%22%2ChButton.type%3D%22button%22%2ChButton.ariaLabel%3D%22Toggle%20Atkinson%20Hyperlegible%20font%22%2ChButton.id%3D%22hButton%22%3Bconst%20linkMHStylesheet%3Ddocument.createElement(%22link%22)%3BlinkMHStylesheet.rel%3D%22stylesheet%22%2ClinkMHStylesheet.href%3D%22https%3A%2F%2Fgithub.com%2Fmurrayinman%2Fuserscripts%2Fraw%2Fmain%2Fgeneral%2FMakeHyperlegible.css%22%2Cdocument.head.appendChild(linkMHStylesheet)%3Blet%20isFontOn%3D!1%3Bfunction%20toggleFont()%7BisFontOn%3Fdocument.body.classList.remove(%22atkinson-hyperlegible%22)%3Adocument.body.classList.add(%22atkinson-hyperlegible%22)%2CisFontOn%3D!isFontOn%7DhButton.addEventListener(%22click%22%2CtoggleFont)%2Cdocument.body.appendChild(hButton)%7D)()
