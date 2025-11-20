@@ -1,6 +1,15 @@
-/* TODO: Make this into a user.css file for browser extensions like Stylus or Stylish */
-
-
+/* ==UserStyle==
+@name           BbAdmin Unhider
+@namespace      github.com/murrayinman/userscripts
+@version        1.0.0
+@description    Unhides the Institution Page editing function and hidden toolbar buttons in Blackboard Learn admin interface
+@author         Murray Inman
+@homepageURL    https://github.com/murrayinman/userscripts
+@supportURL     https://github.com/murrayinman/userscripts/issues
+@license        CC0-1.0
+@match          https://*.blackboard.com/*
+@match          https://*.learn.*/ultra/*
+==/UserStyle== */
 
 /* Unhide the Institution Page Editing Function */
 .module-wrapper .module-wrapper__header {
