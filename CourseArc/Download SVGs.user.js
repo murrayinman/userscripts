@@ -9,8 +9,8 @@
 // @grant        none
 // @run-at       document-idle
 // @noframes
-// @updateURL    https://raw.githubusercontent.com/murrayinman/userscripts/main/Download%20SVGs.user.js
-// @downloadURL  https://raw.githubusercontent.com/murrayinman/userscripts/main/Download%20SVGs.user.js
+// @updateURL    https://raw.githubusercontent.com/murrayinman/userscripts/raw/main/Download%20SVGs.user.js
+// @downloadURL  https://raw.githubusercontent.com/murrayinman/userscripts/raw/main/Download%20SVGs.user.js
 // ==/UserScript==
 
 (function () {
